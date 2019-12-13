@@ -11,5 +11,4 @@
         - run: wget https://releases.hashicorp.com/vault/1.3.0/vault_1.3.0_linux_amd64.zip
         - run: unzip vault_1.3.0_linux_amd64.zip;ls -la
         - run: sudo chmod u+x vault; sudo mv vault /usr/local/bin/;sudo ls -la /usr/local/bin/
-        - run: export VAULT_ADDR='https://35.182.246.254:8200'
-        - run: vault login 4BNGzGC8vHxqJRhheKKhMdxQ
+        - run: sudo ls -la /
