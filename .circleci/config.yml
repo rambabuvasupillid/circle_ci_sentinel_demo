@@ -6,7 +6,5 @@
       steps:
         - checkout # check out the code in the project directory
         - run: ifconfig ##checking ip of local image
-        - run: who am i
-        - run: whoami
-        - run: sudo sudo cp /bin/ping /usr/local/bin/
-        - run: sudo chmod u+s /usr/local/bin/ping; ping 35.182.246.254
+        - run: apt install wget -y
+        - run: apt install unzip -y
