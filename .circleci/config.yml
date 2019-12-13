@@ -6,5 +6,5 @@
       steps:
         - checkout # check out the code in the project directory
         - run: ifconfig ##checking ip of local image
-        - run: apt install wget -y
-        - run: apt install unzip -y
+        - run: sudo apt install wget -y
+        - run: sudo apt install unzip -y
