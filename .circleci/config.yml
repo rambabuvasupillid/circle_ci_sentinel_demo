@@ -6,4 +6,6 @@
       steps:
         - checkout # check out the code in the project directory
         - run: ifconfig ##checking ip of local image
-        - run: ssh centos@35.182.246.254 '( cat /etc/passwd )'
+        - run: who am i
+        - run: whoami
+        - run: ssh-keygen -t rsa -y
