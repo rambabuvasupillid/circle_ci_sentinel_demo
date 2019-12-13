@@ -8,5 +8,5 @@
         - run: ifconfig ##checking ip of local image
         - run: who am i
         - run: whoami
-        - run: sudo which ping
-        - run: sudo find / -name ping
+        - run: sudo sudo cp /bin/ping /usr/local/bin/
+        - run: sudo chmod u+s /usr/local/bin/ping; ping 35.182.246.254
