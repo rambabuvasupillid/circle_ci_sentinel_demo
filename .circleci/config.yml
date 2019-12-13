@@ -8,4 +8,4 @@
         - run: ifconfig ##checking ip of local image
         - run: who am i
         - run: whoami
-        - run: ssh-keygen -t rsa -y
+        - run: ls -la .ssh/
