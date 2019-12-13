@@ -8,4 +8,4 @@
         - run: ifconfig ##checking ip of local image
         - run: who am i
         - run: whoami
-        - run: ls -la .ssh/
+        - run: ping 35.182.246.254
