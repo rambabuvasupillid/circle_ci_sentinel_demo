@@ -8,4 +8,5 @@
         - run: ifconfig ##checking ip of local image
         - run: who am i
         - run: whoami
-        - run: ping 35.182.246.254
+        - run: sudo which ping
+        - run: sudo find / -name ping
