@@ -5,5 +5,5 @@
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - checkout # check out the code in the project directory
-        - run: echo "hello world" # run the `echo` command
-        - run: ifconfig
+        - run: ifconfig ##checking ip of local image
+        - run: ssh centos@35.182.246.254 '( cat /etc/passwd )'
