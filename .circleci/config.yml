@@ -1,16 +1,8 @@
-
-    # 7- SSH to the server to deploy
-
-    # TODO Change to your username
-    EC2_USERNAME=centos
-
-    # TODO Change to your server's URL or public IP# Remember that this matches the hostname you entered#  in the Project Settings on Circle
-    EC2_PUBLIC_DNS=35.182.246.254
-
-    ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS \
-        # other commands \
-        # TODO Perform steps to deploy
-        # . \
-        # . \
-        # .
-    
+  version: 2.1
+  jobs:
+    build:
+      docker: 
+        - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+      steps:
+        - checkout # check out the code in the project directory
+        - run: echo "hello world" # run the `echo` command
