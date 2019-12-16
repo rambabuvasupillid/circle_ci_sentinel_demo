@@ -10,4 +10,4 @@
         - run: sudo apt install unzip -y
         - run: sudo apt install curl -y
         - run: sudo apt install sshpass -y
-        - run: echo "yes" | ssh centos@35.183.102.221 "ls -la"
+        - run: echo "yes\n" | ssh centos@35.183.102.221 "ls -la"
