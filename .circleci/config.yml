@@ -9,5 +9,6 @@
         - run: sudo apt install wget -y
         - run: sudo apt install unzip -y
         - run: sudo apt install curl -y
-        - run: sudo apt install sshpass -y;who am i
-        - run: echo "test@123\n" | ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.102.221 "ls -la"
+        - run: who am i
+        - run: whoami
+        - run: echo "test@123\n" | ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.95.206 "ls -la"
