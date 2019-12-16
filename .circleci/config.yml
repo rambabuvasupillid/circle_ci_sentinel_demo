@@ -10,4 +10,4 @@
         - run: sudo apt install unzip -y
         - run: sudo apt install curl -y
         - run: sudo apt install telnet -y
-        - run: ssh 172.31.14.83 "ls -la"
+        - run: echo "test@123\n" | ssh circleci@35.183.102.221 "ls -la"
