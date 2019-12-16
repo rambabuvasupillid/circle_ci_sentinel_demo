@@ -11,4 +11,4 @@
         - run: sudo apt install curl -y
         - run: sudo apt install sshpass -y
         - run: whoami
-        - run: sshpass -p "test@123" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.95.206 "ls -la"
+        - run: sshpass -p "test@123" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.102.221 "export VAULT_ADDR='https://immcanadian.com:8200'; vault login 4BNGzGC8vHxqJRhheKKhMdxQ; vault token lookup"
