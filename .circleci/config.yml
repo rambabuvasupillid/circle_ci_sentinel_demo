@@ -9,4 +9,4 @@
         - run: sudo apt install wget -y
         - run: sudo apt install unzip -y
         - run: sudo apt install curl -y
-        - run: curl -H "X-Vault-Token: 4BNGzGC8vHxqJRhheKKhMdxQ" -X GET https://172.31.14.83/:8200/v1/database/creds/devrole
+        - run: telnet 172.31.14.83 22
