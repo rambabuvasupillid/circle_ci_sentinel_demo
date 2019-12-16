@@ -9,4 +9,5 @@
         - run: sudo apt install wget -y
         - run: sudo apt install unzip -y
         - run: sudo apt install curl -y
+        - run: sudo apt install telnet -y
         - run: telnet 172.31.14.83 22
