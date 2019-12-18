@@ -8,4 +8,4 @@
         - run: ifconfig ##checking ip of local image
         - run: sudo apt install sshpass -y
         - run: whoami
-        - run: sshpass -p "test@123" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.102.221 "export VAULT_ADDR='https://immcanadian.com:8200'; vault login 4BNGzGC8vHxqJRhheKKhMdxQ; vault write ssh/creds/otp_key_role ip=172.31.14.90"
+        - run: sshpass -p "test@123" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no circleci@35.183.40.189 "export VAULT_ADDR='https://immcanadian.com:8200'; vault login 4BNGzGC8vHxqJRhheKKhMdxQ; vault write ssh/creds/otp_key_role ip=172.31.14.90"
